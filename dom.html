@@ -1,0 +1,30 @@
+<html>
+<body>
+
+<h1>java</h1>
+<p id="demo"></p>
+<p id="demomethod"></p>
+<script>
+
+    var person = {
+
+        firstname: "jhon",
+
+        lastname: "doe",
+
+        age: "40",
+
+        eyecolor: "red",
+
+    };
+
+    document.getElementById("demo").innerHTML =
+        person.firstname+"is"+person.age+"years old.";
+    person.name=function () {
+        return this.firstname+" "+ this.lastname;
+    };
+    document.getElementById("demomethod").innerHTML =
+        "the suspect name is"+ person.name();
+</script>
+</body>
+</html>

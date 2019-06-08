@@ -1,0 +1,23 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function validate() {
+            if (document.form1.uname.value=="")
+            {
+                alert("enter the username");
+                document.form1.uname.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+<h3>
+    onsubmit
+</h3>
+<body>
+<form method="post" action="index.html" name="form1" onsubmit ="returnvalidate()">
+    enter your username <br> <input type="textbox" name="uname"><br><br>
+    <input type="submit" value="submit"/>
+</form>
+</body>
+</html>
